@@ -1,0 +1,15 @@
+image: python:3.9
+
+stages:
+  - generate
+
+generate:icons:
+  stage: generate
+  script:
+    - pip install -r requirements.txt
+    - python fetch_svgs.py
+  artifacts:
+    paths:
+      - generated/
+  only:
+    - main
