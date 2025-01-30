@@ -5,3 +5,5 @@ This project is designed to be used in CI - with the goal of generating SVGs fro
 ## Would need
 * Linting of TSX - using prettier CLI or something
 * (I think) transformation of some svg attributes - fill or something might need some transformations
+* Should probably write into JS/TSX
+* Would need integration into the Lerna `camp` system
